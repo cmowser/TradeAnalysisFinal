@@ -993,20 +993,21 @@ if len(teams) < 2:
 
 # Clear trade inputs and stored results without reloading cached model data.
 def reset_trade():
-    trade_state_keys = [
-        "team_a",
-        "team_b",
-        "team_a_players",
-        "team_b_players",
-        "team_a_picks",
-        "team_b_picks",
-        "balancing_approach",
+    st.session_state["team_a"] = teams[0]
+    st.session_state["team_b"] = teams[1]
+    st.session_state["team_a_players"] = []
+    st.session_state["team_b_players"] = []
+    st.session_state["team_a_picks"] = []
+    st.session_state["team_b_picks"] = []
+    st.session_state["balancing_approach"] = "Player matching"
+
+    result_keys = [
         "evaluation_result",
         "evaluation_signature",
         "trade_result",
         "balance_signature",
     ]
-    for key in trade_state_keys:
+    for key in result_keys:
         st.session_state.pop(key, None)
 
 
