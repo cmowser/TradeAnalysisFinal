@@ -748,28 +748,33 @@ button[kind="primary"] p {
 }
 
 /* Project-information tabs */
-.st-key-project_tabs [data-baseweb="tab-list"] {
+.st-key-project_tabs [data-baseweb="tab-list"],
+div[data-testid="stTabs"] [role="tablist"] {
     gap: 0.4rem;
 }
 
-.st-key-project_tabs [data-baseweb="tab"] {
+.st-key-project_tabs [data-baseweb="tab"],
+div[data-testid="stTabs"] button[role="tab"] {
     background-color: #151515;
     border: 1px solid #333333;
     border-radius: 6px 6px 0 0;
     padding: 0.45rem 0.9rem;
 }
 
-.st-key-project_tabs [data-baseweb="tab"] p {
+.st-key-project_tabs [data-baseweb="tab"] p,
+div[data-testid="stTabs"] button[role="tab"] p {
     color: #D0D0D0 !important;
     font-weight: 600;
 }
 
-.st-key-project_tabs [data-baseweb="tab"][aria-selected="true"] {
+.st-key-project_tabs [data-baseweb="tab"][aria-selected="true"],
+div[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
     background-color: #F0F0F0;
     border-color: #F0F0F0;
 }
 
-.st-key-project_tabs [data-baseweb="tab"][aria-selected="true"] p {
+.st-key-project_tabs [data-baseweb="tab"][aria-selected="true"] p,
+div[data-testid="stTabs"] button[role="tab"][aria-selected="true"] p {
     color: #000000 !important;
 }
 
