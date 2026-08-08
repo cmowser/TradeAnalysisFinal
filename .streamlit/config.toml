@@ -1,0 +1,8 @@
+[theme]
+base="dark" # Can be "light" or "dark"
+primaryColor="#000000" # Accent color for widgets like sliders and buttons
+backgroundColor="#000000" # Main background color
+secondaryBackgroundColor="#262730" # Sidebar and widget background
+textColor="#ffffff" # Text color
+font="sans serif" # Project font: "sans serif", "serif", or "monospace"
+

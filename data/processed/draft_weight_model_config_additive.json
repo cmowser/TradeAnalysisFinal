@@ -1,0 +1,30 @@
+{
+  "raw_target": "net_player_production_value",
+  "model_target": "draft_weight_target",
+  "sign_convention": "Positive net draft count means draft compensation received. Positive player-value differential means more player production acquired.",
+  "outright_pick_hierarchy": [
+    "projected_late_second",
+    "projected_early_second",
+    "projected_late_first",
+    "projected_lottery_first",
+    "projected_top_5_first"
+  ],
+  "swap_draft_tiers": [
+    "projected_late_second_swap",
+    "projected_early_second_swap",
+    "projected_late_first_swap",
+    "projected_lottery_first_swap",
+    "projected_top_5_first_swap"
+  ],
+  "excluded_draft_tiers": [
+    "draft_rights_unranked",
+    "record_unavailable",
+    "unknown_round_unranked"
+  ],
+  "fixed_zero_draft_tiers": [
+    "zero_value_later_round"
+  ],
+  "unit_of_analysis": "team_trade_perspective",
+  "row_weighting": "equal_weight_per_team_perspective",
+  "player_value_eligibility": "Both player sides must be fully resolved. Empty player sides are valued at zero. Known no-prior-NBA-appearance players are valued at zero."
+}
